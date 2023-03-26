@@ -6,9 +6,16 @@ class Results extends LitElement{
         //display: flex;
         text-align: center;
      }
-     :host p,
      :host h1{
         margin:0;
+        margin:31px 0 25px 0;
+        text-align:left;
+     }
+     p{
+        margin:0;
+     }
+     main h1{
+        font-size:0.9375rem;
      }
      header{
         height: 353px;
@@ -19,6 +26,7 @@ class Results extends LitElement{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
 
      }
      div.circular{
@@ -29,16 +37,25 @@ class Results extends LitElement{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        @media only screen and (max-width:375px){
+            border:10px solid red;
+        }
      }
      div.circular>h1{
         color:white;
+        margin:0;
      }
      div.circular>p{
         color:hsl(241, 100%, 89%)
      }
-     ul{
+     main{
         padding:0 33px;
         margin:0
+     }
+     ul{
+        margin:0;
+        padding:0;
      }
      li{
         list-style:none;
@@ -60,6 +77,7 @@ class Results extends LitElement{
      }
      :host li:nth-child(2){
         background:hsla(39, 100%, 56%, 0.2);
+        color:hsla(39, 100%, 56%);
      }
      li:nth-child(3){
         background: hsla(166, 100%, 37%, 0.2);
@@ -88,6 +106,8 @@ class Results extends LitElement{
                         <h1>76</h1>
                         <p>of 100</p>
                     </div>
+                    <h2>Great</h2>
+                    <p>You scored higher than 65% of the people who have taken these tests.</p>
                 </header>
                 <main>
                     <h1>Summary</h1>
