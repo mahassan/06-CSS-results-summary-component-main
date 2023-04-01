@@ -81,67 +81,63 @@ class Results extends LitElement{
     `
     render(){
         const header = html`
-            <div class='container'>
-                <header>
-                    <strong><p>Your Results</p></strong>
-                    <div class='circular'>
-                        <h1>76</h1>
-                        <p>of 100</p>
-                    </div>
-                </header>
-                <main>
-                    <h1>Summary</h1>
-                    <ul>
-                        <li>
-                            <picture>
-                                <img src='./assets/images/icon-reaction.svg' alt='reaction' />
-                            </picture>
-                            <div>
-                                Reaction
-                            </div>
-                            <div>
-                                80/100
-                            </div>
-                        </li>
-
-                        <li>
-                            <picture>
-                                <img src='./assets/images/icon-memory.svg' alt='reaction' />
-                            </picture>
-                            <div>
-                                Memory
-                            </div>
-                            <div>
-                                92/100
-                            </div>
-                        </li>
-                        <li>
-                            <picture>
-                                <img src='./assets/images/icon-verbal.svg' alt='reaction' />
-                            </picture>
-                            <div>
-                                Verbal
-                            </div>
-                            <div>
-                                61/100
-                            </div>
-                        </li>
-                        <li>
-                            <picture>
-                                <img src='./assets/images/icon-visual.svg' alt='reaction' />
-                            </picture>
-                            <div>
-                                Visual
-                            </div>
-                            <div>
-                                72/100
-                            </div>
-                            </li>
-                     </ul>
-                </main>
-                <footer>
-                    <button>Continue</button>
+        <div class="container">
+        <main>
+            <div class="circular">
+              <h1>Your Result</h1>
+              <p><span>76</span> of 100</p>
             </div>
+            <div class="mashead">
+              <h1>Great</h1>
+              <p>You scored higher than 65% of the people who have taken these tests.</p>
+            </div>
+              <h1>Summary</h1>
+              <ul>
+                <li>
+                        <img src='./assets/images/icon-reaction.svg' alt=''/>
+                    <div>
+                        Reaction
+                    </div>
+                    <p>
+                        80/100
+                    </p>
+                </li>
+      
+                <li>
+                    <picture>
+                        <img src='./assets/images/icon-verbal.svg' alt=''/>
+                    </picture>
+                    <div>
+                        Memory
+                    </div>
+                    <p>
+                        92/100
+                    </p>
+                </li>
+                <li>
+                        <img src='./assets/images/icon-verbal.svg' alt=''/>
+                    <div>
+                        Verbal
+                    </div>
+                    <div>
+                        61/100
+                    </div>
+                </li>
+                <li>
+                        <img src='./assets/images/icon-visual.svg' alt=''/>
+                    <div>
+                        Visual
+                    </div>
+                    <p>
+                        72/100
+                    </p>
+                    </li>
+             </ul>
+              <footer>
+                <button>Continue</button>
+              </footer>
+            </main>
+      </div>
         `
         return html`
             ${header}
