@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Overpass:wght@400;700&display=swap');
+div.container{
+   display: flex;
+   text-align: center;
+}
+:host p,
+:host h1{
+   margin:0;
+}
+.header,
+.circular,
+li{
+    display: flex;
+}
+.header{
+   height: 353px;
+   background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+   border-bottom-left-radius:40px;
+   border-bottom-right-radius:40px;
+   flex-direction: column;
+   align-items: center;
+   padding:0 61px;
+}
+.header>p{
+    padding:26px 0;
+}
+div.circular{
+   height: 148px;
+   width: 148px;
+   background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+   border-radius: 50%;
+   flex-direction: column;
+   justify-content: center;
+   padding:20px;
+   box-sizing: border-box;
+   margin-bottom:32px;
+}
+div.circular>h1{
+   color:white;
+   margin:19px;
+   font-size: 3.5rem;;
+   box-sizing: border-box;
+}
+.masthead h2{
+    margin-bottom:21px;
+    color:#fff;
+}
+section{
+    padding:0 33px;
+}
+.header p{
+   color:hsl(241, 100%, 89%)
+}
+section h3{
+    margin: 28px 0;
+    text-align: left;
+}
+ul{
+   margin:0
+}
+li{
+   list-style:none;
+   min-height:58px;
+   min-width:310px;
+   margin-bottom:18px;
+   border-radius:10px;
+   justify-content: space-around;
+   align-items: center;
+}
+li>picture{
+   padding-left:18px;
+   padding-right:47px;
+}
+li:first-child{
+   background: hsla(241, 100%, 89%,0.2);
+   color: hsl(234, 85%, 45%)
+}
+li:nth-child(2){
+   background:hsla(39, 100%, 56%, 0.2);
+   color: hsl(39,100%,56%);
+}
+li:nth-child(3){
+   background: hsla(166, 100%, 37%, 0.2);
+   color: hsl(166, 100%, 37%)
+}
+li>div:first-of-type{
+   margin-right:79px;
+}
+li:last-of-type{
+   background:hsla(234, 85%, 45%, 0.2);
+}
+button{
+   background: hsl(224, 30%, 27%);
+   border:0;
+   color: #fff;
+   border-radius:50px;
+   width: 100%;
+   padding:23px 0;
+}
