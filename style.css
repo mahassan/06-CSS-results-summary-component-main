@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Overpass:wght@400;700&display=swap');
-div.container{
-   display: flex;
-   text-align: center;
+@media screen and (min-width:375px) {
+    div.container{
+        min-width: 1440px;
+        margin: 0 auto;
+    }
 }
 :host p,
 :host h1{
@@ -20,6 +22,12 @@ li{
    flex-direction: column;
    align-items: center;
    padding:0 61px;
+   text-align: center;
+}
+@media screen and (min-width:375px){
+      .header{
+         height: auto;
+      }
 }
 .header>p{
     padding:26px 0;
@@ -48,6 +56,8 @@ div.circular>h1{
 section{
     padding:0 33px;
 }
+@media screen and (min-width:375px){
+}
 .header p{
    color:hsl(241, 100%, 89%)
 }
@@ -55,6 +65,14 @@ section h3{
     margin: 28px 0;
     text-align: left;
 }
+    @media screen and (min-width:375px){
+        main{
+            display: flex;
+            flex-direction: row;
+            width:313px;
+            margin:0 auto;
+        }
+    }
 ul{
    margin:0
 }
