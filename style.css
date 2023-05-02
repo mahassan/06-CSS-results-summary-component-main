@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Overpass:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Overpass', sans-serif;
+}
 @media screen and (min-width:375px) {
     div.container{
         min-width: 1440px;
@@ -100,9 +112,6 @@ li:nth-child(2){
 li:nth-child(3){
    background: hsla(166, 100%, 37%, 0.2);
    color: hsl(166, 100%, 37%)
-}
-li>div:first-of-type{
-   margin-right:79px;
 }
 li:last-of-type{
    background:hsla(234, 85%, 45%, 0.2);
