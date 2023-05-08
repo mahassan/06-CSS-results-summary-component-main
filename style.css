@@ -6,40 +6,43 @@
   margin: 0;
   padding: 0
 }
-ul{
-   margin:0
+ul,li{
+   margin:0;
+   list-style:none;
 }
 body {
   font-family: 'Hanken Grotesk', sans-serif;
   font-family: 'Overpass', sans-serif;
+   display: grid;
+   min-height: 100vh;
+   place-content: center;
 }
-    div.container{
-        width: 800px;
-        margin: 0 auto;
-    }
+@media screen and (min-width:400px) {
+   .container{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+   }
+}
 .header,
 .circular,
 li{
     display: flex;
 }
 section.header{
-   width: 307px;
    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
    border-bottom-left-radius:40px;
    border-bottom-right-radius:40px;
    flex-direction: column;
    align-items: center;
-   padding:0 61px;
+   padding:41px 61px;
    text-align: center;
 }
-@media screen and (min-width:375px){
+   @media screen and (min-width:400px) {
       section.header{
-         height: auto;
+         width: 307px;
       }
-}
-section.header>p{
-    padding:26px 0;
-}
+   }
 div.circular{
    height: 148px;
    width: 148px;
@@ -64,8 +67,6 @@ div.circular>h1{
 section{
     padding:0 33px;
 }
-@media screen and (min-width:375px){
-}
 .header p{
    color:hsl(241, 100%, 89%)
 }
@@ -73,17 +74,17 @@ section h3{
     margin: 28px 0;
     text-align: left;
 }
-@media screen and (min-width:375px){
-   main{
-      display: flex;
-      flex-direction: row;
-      min-width:313px;
+main{
       margin:0 auto;
-   }
+      width: 100%;;
 }
-
+@media screen and (min-width:400px) {
+      main{
+         display: flex;
+         flex-direction: row;
+      }
+}
 li{
-   list-style:none;
    min-height:58px;
    min-width:310px;
    margin-bottom:18px;
