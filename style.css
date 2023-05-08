@@ -13,19 +13,17 @@ body {
   font-family: 'Hanken Grotesk', sans-serif;
   font-family: 'Overpass', sans-serif;
 }
-@media screen and (min-width:375px) {
     div.container{
-        min-width: 1440px;
+        width: 800px;
         margin: 0 auto;
     }
-}
 .header,
 .circular,
 li{
     display: flex;
 }
 section.header{
-   min-height: 353px;
+   width: 307px;
    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
    border-bottom-left-radius:40px;
    border-bottom-right-radius:40px;
