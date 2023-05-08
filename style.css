@@ -13,7 +13,6 @@ ul,li{
 body {
   font-family: 'Hanken Grotesk', sans-serif;
   font-family: 'Overpass', sans-serif;
-   display: grid;
    min-height: 100vh;
    place-content: center;
 }
@@ -23,6 +22,17 @@ body {
       justify-content: center;
       align-content: center;
    }
+   body{
+      display: grid;
+   }
+   section.header{
+      width: 307px;
+      border-radius:40px;
+   }
+   main{
+      display: flex;
+      flex-direction: row;
+   }
 }
 .header,
 .circular,
@@ -31,19 +41,13 @@ li{
 }
 section.header{
    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-   border-radius:40px;
+   border-bottom-left-radius:40px;
+   border-bottom-right-radius:40px;
    flex-direction: column;
    align-items: center;
    padding:41px 61px;
    text-align: center;
 }
-   @media screen and (min-width:400px) {
-      section.header{
-         width: 307px;
-         border-bottom-left-radius:40px;
-         border-bottom-right-radius:40px;
-      }
-   }
 div.circular{
    height: 148px;
    width: 148px;
@@ -57,19 +61,27 @@ div.circular{
 }
 div.circular>h1{
    color:white;
-   margin:19px;
    font-size: 3.5rem;;
    box-sizing: border-box;
 }
 .masthead h2{
-    margin-bottom:21px;
+    margin-bottom:1.75;
     color:#fff;
 }
 section{
     padding:0 33px;
 }
+.masthead span,
+.header span{
+   font-size: 1rem;
+   display: block;
+}
+.masthead span{
+   font-weight: 100;
+}
+.header span,
 .header p{
-   color:hsl(241, 100%, 89%)
+   color:hsl(241, 100%, 89%);
 }
 section h3{
     margin: 28px 0;
@@ -79,15 +91,9 @@ main{
       margin:0 auto;
       width: 100%;;
 }
-@media screen and (min-width:400px) {
-      main{
-         display: flex;
-         flex-direction: row;
-      }
-}
 li{
    min-height:58px;
-   min-width:310px;
+   width:310px;
    margin-bottom:18px;
    border-radius:10px;
    justify-content: space-around;
