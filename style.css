@@ -31,8 +31,7 @@ li{
 }
 section.header{
    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-   border-bottom-left-radius:40px;
-   border-bottom-right-radius:40px;
+   border-radius:40px;
    flex-direction: column;
    align-items: center;
    padding:41px 61px;
@@ -41,6 +40,8 @@ section.header{
    @media screen and (min-width:400px) {
       section.header{
          width: 307px;
+         border-bottom-left-radius:40px;
+         border-bottom-right-radius:40px;
       }
    }
 div.circular{
